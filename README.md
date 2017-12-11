@@ -3,8 +3,8 @@ My solutions to Advent of Code 2017
 http://adventofcode.com/
 
 ## Personal Stats
-| ||Part 1|||Part 2||
-|-|-|-|-|-|-|-|
+| |Part 1||Part 2||
+|-|-|-|-|-|
 |Day|Time|Rank|Time|Rank|
 |10|20:03:38|6312|20:53:33|5512|
 |9|20:16:05|6760|21:20:01|6694|
