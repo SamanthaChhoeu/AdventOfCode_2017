@@ -8,8 +8,6 @@ for i,prog in enumerate(programs):
     slot[str(i)] = prog
     
 length = len(programs)
-print(length)
-
 # based on index in slot
 def swap(x,y):
 
@@ -67,18 +65,19 @@ def dance():
             for item in position.keys():
                 index = position[item]
                 slot[index] = item
+repCount = 0
 while count < 1000000000:
     start = ''
     for key in slot.keys():
         start += slot[key]
 
-    if start in seen.keys():
-        slot = seen[start]
-        repCount = count-1
+    if start in seen.keys() and repCount == 0:
+        slot = seen[start].copy()
+        repCount = count
 #         print(repCount)
         count = 1000000000 - 1000000000%repCount
         
-    print(count) 
+#     print(count) 
 
     dance()
 
@@ -90,5 +89,5 @@ while count < 1000000000:
 answer = ''
 for key in slot.keys():
     answer += slot[key]
-    
+
 print(answer)
